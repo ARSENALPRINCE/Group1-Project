@@ -1,0 +1,136 @@
+body{
+    background-color:  hsl(0, 0%, 98%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.nav{
+    /* width: 10rem; */
+    display: flex;
+    gap: 110px;
+}
+.menu{
+    display: flex;
+    gap: 1rem;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+ul li{
+    list-style-type: none;
+}
+.features::after,.company::after{
+    content: "^";
+}
+.features,.company{
+    position: relative;
+}
+
+.dropdown{
+     display: none; 
+    width: 150px;
+    background-color: #f2f2f2;
+     padding: 1rem ;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    position: absolute;
+    border-radius: 8px;
+    top: 30px;
+    left: 0px;
+    right: 10px;
+    margin-right: 80px;
+    gap: 10px;
+    }
+.dropdown2{
+    width: 150px;
+    background-color: #f2f2f2;;
+    padding: 1rem ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 8px;
+    top: 30px;
+    left: 0px;
+    display: none;
+    gap: 10px;
+ }
+ .features:hover .dropdown{
+    display: flex;
+
+ }
+ .company:hover .dropdown2{
+    display: flex;
+}
+.container{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: space-between;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.content h2{
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content p{
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+.content button{
+    width: 120px;
+    padding: 10px;
+    height: 35px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+}
+.mini_logo{
+    display: flex;
+    gap: 20px;
+}
+.mini_logo img{
+    width: 30px;
+}
+.content_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.button{
+    display: flex;
+    gap: 1rem;
+}
+.button button:first-child{
+    width: 60px;
+    padding: 10px;
+    border: none;
+    background-color:  hsl(0, 0%, 98%);
+
+    }
+.button button:nth-child(2){
+    width: 80px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color:  hsl(0, 0%, 98%);
+    border-radius: 9px;
+
+}
