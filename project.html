@@ -1,56 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROJECT</title>
     <link rel="stylesheet" href="project.css">
+    <script src="https://kit.fontawesome.com/4c58ef504e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <nav class="navbar">
-        <div class="nav">
-            <div class="logo">
-                <img src="logo.svg" alt="logo" >
+        <div>
+            <div class="nav">
+                <div class="logo">
+                    <img src="logo.svg" alt="logo">
+                </div>
+
+                <div class="nav-link-container" id="nav-link-container">
+                    <ul class="menu">
+    
+                        <li class="features">
+                            <a href="#">Features <img src="./icon-arrow-down.svg" alt="dropdown"> </a>
+    
+                            <ul class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="nav-icon">
+                                        <li><i class="fa-solid fa-list-check" style="color: #B197FC;"></i></li>
+                                        <li><i class="fa-solid fa-calendar-days" style="color: #74C0FC;"></i></li>
+                                        <li><i class="fa-solid fa-bell" style="color: #FFD43B;"></i></li>
+                                        <li><i class="fa-solid fa-bars-progress" style="color: #B197FC;"></i></li>
+                                    </div>
+                                    <div class="nav-link">
+                                        <li><a href="#">Todo List</a></li>
+                                        <li><a href="#">Calendar</a></li>
+                                        <li><a href="#">Planning</a></li>
+                                        <li><a href="#">Reminder</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+    
+                        <li class="company">
+                            <a href="#">Company <img src="./icon-arrow-down.svg" alt="dropdown"> </a></a>
+                            <ul class="dropdown2">
+                                <div class="dropdown2-content">
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Our Team</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </div>
+                            </ul>
+                        </li>
+    
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">About</a></li>
+    
+                    </ul>  
+                    <div class="button">
+                        <button>LOGIN</button>
+                        <button>REGISTER</button>
+                    </div>    
+                </div>
+
+                <div class="ham_menu" onclick="toggleMenu()" >
+                    <div class="ham-menu-icon">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+
+                <div onclick="closeNav()" class="closebtn" id="closeBtn">
+                    <p  style="background-color: #FFD43B; padding: 7px;">
+                        x
+                    </p>
+                </div>
+
             </div>
-            
-                <ul class="menu">
-                    <li class="features">
-                        <a href="#">Features</a>
-                        <ul class="dropdown">
-                            <li><a href="#">Todo List</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">Planning</a></li>
-                            <li><a href="#">Reminder</a></li>
-                        </ul>
-                    </li>
-    
-                    <li class="company">
-                        <a href="#">Company</a>
-                        <ul class="dropdown2">
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Our Team</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-                    </li>
-    
-                    <li><a href="#">Career</a></li>
-                    <li><a href="#">About</a></li>
-                    
-                </ul>
-        </div>
-        <div class="button">
-            <button>LOGIN</button>
-            <button>REGISTER</button>
         </div>
     </nav>
+
 
     <div class="container">
         <div class="content">
             <div class="content_wrapper">
                 <h2>MAKE <br>REMOTE WORK</h2>
-            <p><h4> Get your team in sync, no matter your location.<br> Streamline processes, create team rituals,<br> and watch productivity soar.</h4></p>
-            <button>Learn More</button>
+                <p>
+                <h4> Get your team in sync, no matter your location.<br> Streamline processes, create team rituals,<br>
+                    and watch productivity soar.</h4>
+                </p>
+                <button>Learn More</button>
             </div>
             <div class="mini_logo">
                 <img src="client-databiz.svg">
@@ -61,5 +105,8 @@
         </div>
         <img src="image-hero-desktop.png" height="380px">
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
+<footer></footer>
